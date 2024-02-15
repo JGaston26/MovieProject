@@ -22,6 +22,7 @@ public class MovieCollection {
                 String data = fileScanner.nextLine();
                 String[] splitData = data.split(",");
 
+
             }
         } catch (IOException exception) {
             System.out.println(exception.getMessage());
