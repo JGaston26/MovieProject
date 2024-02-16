@@ -5,11 +5,11 @@ public class Movie {
     private ArrayList<String> cast;
     private String director;
     private String overview;
-    private int runTime;
-    private double userRating;
+    private String runTime;
+    private String userRating;
     private Scanner scan;
 
-    public Movie(String title, ArrayList<String> cast, String director, String overview, int runTime, double userRating){
+    public Movie(String title, ArrayList<String> cast, String director, String overview, String runTime, String userRating){
         cast = new ArrayList<String>();
         scan = new Scanner(System.in);
         this.title = title;
@@ -28,10 +28,10 @@ public class Movie {
     public String getOverview(){
         return overview;
     }
-    public int getRunTime(){
+    public String getRunTime(){
         return runTime;
     }
-    public double getUserRating(){
+    public String getUserRating(){
         return runTime;
     }
 }
