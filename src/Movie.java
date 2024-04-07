@@ -1,37 +1,41 @@
-import java.util.ArrayList;
-import java.util.Scanner;
 public class Movie {
     private String title;
-    private ArrayList<String> cast;
+    private String cast;
     private String director;
     private String overview;
-    private String runTime;
-    private String userRating;
-    private Scanner scan;
+    private int runtime;
+    private double userRating;
 
-    public Movie(String title, ArrayList<String> cast, String director, String overview, String runTime, String userRating){
-        cast = new ArrayList<String>();
-        scan = new Scanner(System.in);
+    public Movie(String title, String cast, String director, String overview, int runtime, double userRating) {
         this.title = title;
+        this.cast = cast;
         this.director = director;
         this.overview = overview;
-        this.runTime = runTime;
+        this.runtime = runtime;
         this.userRating = userRating;
     }
 
-    public String getTitle(){
+    public String getTitle() {
         return title;
     }
-    public String getDirector(){
+
+    public String getCast() {
+        return cast;
+    }
+
+    public String getDirector() {
         return director;
     }
-    public String getOverview(){
+
+    public String getOverview() {
         return overview;
     }
-    public String getRunTime(){
-        return runTime;
+
+    public int getRuntime() {
+        return runtime;
     }
-    public String getUserRating(){
-        return runTime;
+
+    public double getUserRating() {
+        return userRating;
     }
 }
